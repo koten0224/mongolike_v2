@@ -2,7 +2,7 @@ class User
   class Login
     attr_accessor :email, :password, :user
     include ActiveModel::Model
-    include ValidateConcren
+    include ValidateConcern
     validate :authenticate
 
     def authenticate

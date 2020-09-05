@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  include ValidateConcren
+  include ValidateConcern
   validates :name, :email, presence: true
   has_secure_password
   before_validation :auto_fill_password

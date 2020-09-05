@@ -1,5 +1,5 @@
 class User
-  module ValidateConcren
+  module ValidateConcern
     def self.included(base)
       base.class_eval do
         sub_regex = /[a-z0-9]+(_[a-z0-9]+)*/
@@ -9,5 +9,5 @@ class User
       end
     end
   end
-  private_constant :ValidateConcren
+  private_constant :ValidateConcern
 end
